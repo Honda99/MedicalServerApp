@@ -1,0 +1,14 @@
+﻿body {
+}
+.item-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+}
+.item-container .img-container {
+    
+}
+.item-container .item-description {
+    
+}

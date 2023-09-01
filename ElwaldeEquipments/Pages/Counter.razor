@@ -1,0 +1,50 @@
+﻿@page "/counter"
+@using ElwaldeEquipments.Model;
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<Carousel Images="carouselImages" />
+
+@code {
+    List<CarouselImage> carouselImages = new List<CarouselImage>
+    {
+        new CarouselImage
+        {
+            Url = "images/DentalUnit_AY215A2.jpg",
+            AltText = "Slide 1",
+            Caption = "Slide 1",
+            Description = "Description for Slide 1",
+            Duration=3000
+        },
+        new CarouselImage
+        {
+            Url = "images/AX900_AnestasiaMachine.png",
+            AltText = "Slide 2",
+            Caption = "Slide 2",
+            Description = "Description for Slide 2",
+            Duration=4000
+
+        },
+        new CarouselImage
+        {
+            Url = "images/Bed_01.jpg",
+            AltText = "Slide 3",
+            Caption = "Slide 3",
+            Description = "Description for Slide 3",
+            Duration=5000
+        }
+    };
+
+
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

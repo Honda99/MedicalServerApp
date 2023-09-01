@@ -1,0 +1,17 @@
+﻿body {
+}
+.carousel-item-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:350px;
+    
+}
+.carousel-imgContainer{
+    background-color:green;
+    flex-basis:70%;
+}
+.carousel-descriptionContainer{
+    background-color:yellow;
+    flex-basis:30%;
+}

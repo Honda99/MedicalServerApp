@@ -1,0 +1,17 @@
+body[b-hh7isf4448] {
+}
+.carousel-item-container[b-hh7isf4448]{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:350px;
+    
+}
+.carousel-imgContainer[b-hh7isf4448]{
+    background-color:green;
+    flex-basis:70%;
+}
+.carousel-descriptionContainer[b-hh7isf4448]{
+    background-color:yellow;
+    flex-basis:30%;
+}
